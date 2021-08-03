@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Марина Чекменева Frontend-разработчик и веб-верстальщик</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="no-js">
+    <header class="header js-header">
+        <div class="container header__container">
+            <nav class="nav header__nav nav-close js-nav">
+                <ul class="header__nav-list ul-reset">
+                    <li class="header__nav-item">
+                        <a href="#main-page" class="nav__link js-nav-link">Главная</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#services" class="nav__link js-nav-link">Услуги</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#portfolio" class="nav__link js-nav-link">Портфолио</a>
+                    </li>
+                </ul>
+
+                <button class="burger header__burger btn-reset js-burger" type="button"
+                    aria-label="Открыть меню-бургер">
+                    <i class="fas fa-bars js-fas"></i>
+                </button>
+            </nav>
+
+            <address class="contacts header__contacts">
+                <a href="tel:+7(499)9955577" class="header__contacts-phone">+7 (981) 768-89-30</a>
+            </address>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="first js-section-active" id="main-page">
+            <span class="fly-elem fly-elem_brackets anim js-fly-elem">&lcub; &rcub;</span>
+            <span class="fly-elem fly-elem_grid anim js-fly-elem">&num;</span>
+            <span class="fly-elem fly-elem_div anim js-fly-elem">&lt;div&gt;</span>
+            <span class="fly-elem fly-elem_div2 anim js-fly-elem">&lt;div&gt;</span>
+            <span class="fly-elem fly-elem_tag anim js-fly-elem">&lt;&sol;&gt;</span>
+            <span class="fly-elem fly-elem_tag2 anim js-fly-elem">&lt;&sol;&gt;</span>
+
+            <div class="container first__container">
+                <h1 class="first__heading">Марина Чекменева</h1>
+                <p class="first__disc">Frontend-разработчик и веб-верстальщик</p>
+            </div>
+
+            <picture>
+                <source media="(max-width: 800px)" type="image/webp" srcset="img/fon-mob.png 1x">
+
+                <source type="image/webp" srcset="img/fon.png 1x">
+
+                <source media="(max-width: 800px)" srcset="img/fon-mob.png 1x">
+
+                <img src="img/fon.png" alt="Фотография Дмирия" class="first__image"
+                    aria-label="Фотография Дмирия">
+            </picture>
+
+            <canvas id="myCanvas" class="canvas" width="920" height="764">
+                <p>Ваш браузер не поддерживает canvas</p>
+            </canvas>
+        </section>
+
+        <section class="services js-section-active" id="services">
+            <div class="container">
+                <h2 class="heading services__heading">Что я делаю</h2>
+
+                <ul class="services__list ul-reset">
+                    <li class="services__item ">
+                        <h3 class="services__title services__title_layout">Вёрстка лендинг–страниц и&nbsp;сайтов</h3>
+                    </li>
+                    <li class="services__item ">
+                        <h3 class="services__title services__title_adaptive">Адаптивная вёрстка под&nbsp;все браузеры и&nbsp;устройства</h3>
+                    </li>
+                    <li class="services__item ">
+                        <h3 class="services__title services__title_programming">Frontend – разработка</h3>
+                    </li>
+                    <li class="services__item ">
+                        <h3 class="services__title services__title_modification">Исправление и&nbsp;доработка
+                            существующей вёрстки</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="portfolio js-section-active" id="portfolio">
+            <div class="container portfolio__container">
+                <h2 class="heading portfolio__heading">Примеры моих работ</h2>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__project">
+                                <div class="about-project__img-block" data-simplebar>
+                                    <picture>
+                                        <!-- <source media="(max-width: 800px)" type="image/webp" srcset="img/fon-mob.png 1x"> -->
+
+                                        <!-- <source type="image/webp" srcset="img/fon.png 1x"> -->
+
+                                        <source media="(max-width: 800px)" srcset="img/sait-news-main-plan.jpg 1x">
+
+                                        <img src="img/sait-news-main.jpg" alt="Картинка главной страницы новостного агентства" class="about-project__img">
+                                    </picture>
+                                </div>
+                                <div class="about-project__desc desc">
+                                    <h3 class="desc__heading">Сайт новостного агентства</h3>
+                                    <p class="desc__content">Сверстана главная страница сайта из нескольких блоков, реализована адаптивная версия по готовому макету. С помощью jquery выведен курс рубля к евро и рубля к доллару через ресурс fixer.io. А также отображается реальное время и дата.</p>
+                                    <a class="about-project__link" href="https://rina-ai.github.io/news-agency.github.io/" target="_blank">Результат</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__project">
+                                <div class="about-project__img-block" data-simplebar>
+                                    <img src="img/sait-flower.jpg" alt="Картинка главной страницы новостного агентства" class="about-project__img">
+                                </div>
+                                <div class="about-project__desc desc">
+                                    <h3 class="desc__heading">Сайт цветочного магазина</h3>
+                                    <p class="desc__content">Сверстана главная страница сайта из нескольких блоков с помощью Bootstrap.</p>
+                                    <a class="about-project__link" href="https://rina-ai.github.io/flower.github.io/" target="_blank">Результат</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__project">
+                                <div class="about-project__img-block" data-simplebar>
+                                    <img src="img/sait-todo-main.jpg" alt="Картинка приложения ToDo" class="about-project__img">
+                                </div>
+                                <div class="about-project__desc desc">
+                                    <h3 class="desc__heading">Приложение ToDo</h3>
+                                    <p class="desc__content">Приложение для списка дел. В приложение можно составлять три разных списка (на разных страницах). Выделять выполненые дела, удалять ненужные дела. Добавлять массив дел, которые отображаются в списке сразу после загрузки приложения. Также раелизовано сохранение данных между перезагрузками страницы с помощью localStorage.</p>
+                                    <a class="about-project__link" href="https://rina-ai.github.io/ToDo.github.io/" target="_blank">Результат</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <a href="https://github.com/Rina-ai" class="portfolio__link-projects link-projects" target="_blank">Посмотреть на GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer js-section-active">
+        <div class="container footer__container">
+            <nav class="nav fotter__nav">
+                <ul class="fotter__nav-list ul-reset">
+                    <li class="fotter__nav-item">
+                        <a href="#main-page" class="nav__link js-nav-link">Главная</a>
+                    </li>
+                    <li class="fotter__nav-item">
+                        <a href="#services" class="nav__link js-nav-link"> Услуги</a>
+                    </li>
+                    <li class="fotter__nav-item">
+                        <a href="#portfolio" class="nav__link js-nav-link">Портфолио</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <address class="contacts footer__contacts">
+                <a href="tel:+7(981)7688930" class="footer__contacts-phone">
+                    <i class="fas fa-phone footer__fa-phone"></i>+7 (981) 768-89-30
+                </a>
+                <a href="mailto:marina.ch.2018@yandex.ru" class="footer__contacts-mail">
+                    <i class="fas fa-envelope"></i>marina.ch.2018@yandex.ru
+                </a>
+            </address>
+
+            <div class="footer__right">
+                    <ul class="footer__social-list ul-reset">
+                        <li class="footer__social-item">
+                            <a href="https://vk.com/id131972212" class="footer__social-link" target="_blank" aria-label="Ссылка на страницу в вконтакте">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://t.me/MarinaChek" class="footer__social-link" target="_blank" aria-label="Ссылка на telegram">
+                                <i class="fab fa-telegram-plane"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://github.com/Rina-ai" class="footer__social-link" target="_blank" aria-label="Ссылка на github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <p class="footer__copyright-text">&copy; Марина Чекменева, 2020 – 2021</p>
+        </div>
+    </footer>
+    
+    <script src="js/main.min.js"></script>
+</body>
+</html>
